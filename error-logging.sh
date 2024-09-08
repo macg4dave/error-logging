@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage on your script
+# Usage on your script.
 # source /path/to/error-logging.sh
 
 # log_file="/path/to/logfile.log"
