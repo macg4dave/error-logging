@@ -16,7 +16,9 @@
   </ul>
 
   <h2>Usage</h2>
-  <pre><code># Source the script
+  <pre><code>
+
+# Source the script
 source /path/to/error-logging.sh
 
 # Set global verbose level
