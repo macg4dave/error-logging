@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>Error Logging Script</h1>
-  <p>This repository contains a shell script for error logging, designed to log error messages and maintain log files efficiently.</p>
+  <p>A shell script for error logging, designed to log error messages and maintain log files efficiently.</p>
 
   <h2>Features</h2>
   <ul>
@@ -17,11 +17,12 @@
   </ul>
 
   <h2>Usage</h2>
-  <pre><code># Source the script
+  <pre><code>
+# Source the script
 source /path/to/error-logging.sh
 
 # Set global verbose level
-log_verbose=2
+log_verbose=2 #This would show errors and normal messages
 
 # Specify log file path
 log_file="/path/to/logfile.log"
@@ -29,7 +30,8 @@ log_file="/path/to/logfile.log"
 # Write log messages
 log_write 1 "This is an ERROR message"
 log_write 2 "This is a NORMAL message"
-log_write 3 "This is an INFO message"  # Won't log if verbose level is 2
+log_write 3 "This is an INFO message"
+log_write 4 "This is an DEBUG message"
   </code></pre>
 
   <h2>License</h2>
