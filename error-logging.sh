@@ -46,8 +46,6 @@ log_write() {
     local log_level_name="${level_names[$level]}"
     local formatted_message="$datetime - $log_level_name: $message"
 
-    echo "Debug: Level=$level, Verbosity=$log_verbose"  # Debugging output
-
     # Write log if current level is within the verbosity level
     if [[ $level -le $log_verbose ]]; then
         if log_create_path "$log_file"; then
@@ -60,7 +58,6 @@ log_write() {
             return 1
         fi
     else
-        echo "Log level $level is not within verbosity setting $log_verbose: $message" >&2
         return 1
     fi
 }
